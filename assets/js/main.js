@@ -105,8 +105,8 @@ const renderFeatured = (games) => {
     <div class="tag-list">${featured.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}</div>
     <p class="meta">Updated ${formatDate(featured.updatedAt)}</p>
     <div class="card-actions">
-      <a class="btn" href="${featured.url}" target="_blank" rel="noopener">Play</a>
-      ${featured.repo ? `<a class="btn btn-ghost" href="${featured.repo}" target="_blank" rel="noopener">Source</a>` : ""}
+      <a class="btn" href="${featured.url}" target="_blank" rel="noopener">Main</a>
+      ${featured.repo ? `<a class="btn btn-ghost" href="${featured.repo}" target="_blank" rel="noopener">Sumber</a>` : ""}
     </div>
   `;
   elements.featured.append(media, content);
@@ -150,8 +150,8 @@ const renderGames = () => {
       <p>${game.description}</p>
       <div class="tag-list">${game.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}</div>
       <div class="card-actions">
-        <a class="btn" href="${game.url}" target="_blank" rel="noopener">Play</a>
-        ${game.repo ? `<a class="btn btn-ghost" href="${game.repo}" target="_blank" rel="noopener">Source</a>` : ""}
+        <a class="btn" href="${game.url}" target="_blank" rel="noopener">Main</a>
+        ${game.repo ? `<a class="btn btn-ghost" href="${game.repo}" target="_blank" rel="noopener">Sumber</a>` : ""}
       </div>
     `;
     card.append(media, content);
