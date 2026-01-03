@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pixel Playground — Game Web Indie</title>
-  <meta name="description" content="Pixel Playground adalah katalog pilihan game web indie yang bisa langsung dimainkan." />
+  <title>Pixel Playground — Indie Web Games</title>
+  <meta name="description" content="Pixel Playground is a curated catalog of indie web games you can play instantly." />
   <meta property="og:title" content="Pixel Playground" />
-  <meta property="og:description" content="Koleksi game web indie yang bisa langsung kamu mainkan." />
+  <meta property="og:description" content="A collection of indie web games you can play instantly." />
   <meta name="theme-color" content="#0b0b12" />
   <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
+  <div id="page-loader">
+    <h1 class="loader-text shimmer">Pixel Playground</h1>
+  </div>
   <div class="grain" aria-hidden="true"></div>
   <header class="site-header" id="home">
     <div class="container header-inner">
       <a class="logo" href="#home">Pixel Playground</a>
-      <nav class="site-nav" aria-label="Utama">
-        <a href="#home">Beranda</a>
-        <a href="#games">Game</a>
-        <a href="#about">Tentang</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#games">Games</a>
+        <a href="#about">About</a>
       </nav>
-      <button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false">
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
@@ -29,9 +32,9 @@
     </div>
     <div class="mobile-drawer" aria-hidden="true">
       <nav class="drawer-nav" aria-label="Mobile">
-        <a href="#home">Beranda</a>
-        <a href="#games">Game</a>
-        <a href="#about">Tentang</a>
+        <a href="#home">Home</a>
+        <a href="#games">Games</a>
+        <a href="#about">About</a>
       </nav>
     </div>
   </header>
@@ -40,9 +43,9 @@
     <section class="hero reveal">
       <div class="container hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">Main langsung • Tanpa instalasi</p>
+          <p class="eyebrow">Play instantly • No installs</p>
           <h1>Pixel Playground</h1>
-          <p class="lead">Koleksi game web indie yang bisa langsung kamu mainkan.</p>
+          <p class="lead">A collection of indie web games you can play instantly.</p>
           <div class="hero-actions">
             <a class="btn" href="#games">Main Sekarang</a>
             <a class="btn btn-ghost" href="#featured">Jelajahi</a>
@@ -51,10 +54,10 @@
         <div class="hero-card">
           <div class="hero-card-inner">
             <p class="hero-stat">10+</p>
-            <p class="hero-label">Game web pilihan</p>
+            <p class="hero-label">Handpicked web games</p>
             <div class="hero-pills">
               <span>HTML5</span>
-              <span>Santai</span>
+              <span>Cozy</span>
               <span>Retro</span>
             </div>
           </div>
@@ -65,8 +68,8 @@
     <section class="section reveal" id="featured">
       <div class="container">
         <div class="section-header">
-          <h2>Game Unggulan</h2>
-          <p>Sorotan untuk game indie pilihan.</p>
+          <h2>Featured Game</h2>
+          <p>Spotlight on a standout indie title.</p>
         </div>
         <div id="featured-card" class="featured-card"></div>
       </div>
@@ -75,35 +78,35 @@
     <section class="section reveal" id="games">
       <div class="container">
         <div class="section-header">
-          <h2>Katalog Game</h2>
-          <p>Cari, filter, dan langsung mainkan.</p>
+          <h2>Games Catalog</h2>
+          <p>Search, filter, and jump into play.</p>
         </div>
         <div class="toolbar">
           <div class="input-group">
-            <label for="search">Cari</label>
-            <input id="search" type="search" placeholder="Cari game" autocomplete="off" />
+            <label for="search">Search</label>
+            <input id="search" type="search" placeholder="Search games" autocomplete="off" />
           </div>
           <div class="input-group">
             <label for="tag">Tag</label>
             <select id="tag"></select>
           </div>
           <div class="input-group">
-            <label for="sort">Urutkan</label>
+            <label for="sort">Sort</label>
             <select id="sort">
-              <option value="updated">Terbaru</option>
-              <option value="popular">Terpopuler</option>
+              <option value="updated">Updated</option>
+              <option value="popular">Popularity</option>
               <option value="az">A–Z</option>
             </select>
           </div>
         </div>
         <div id="error-banner" class="error-banner" hidden>
-          <p>Gagal memuat game. Silakan coba lagi.</p>
+          <p>Failed to load games. Please try again.</p>
           <button class="btn btn-ghost" id="retry">Coba Lagi</button>
         </div>
         <div id="games-grid" class="games-grid"></div>
         <div class="pagination">
           <button id="prev" class="btn btn-ghost" type="button">Sebelumnya</button>
-          <span id="page-info">Halaman 1</span>
+          <span id="page-info">Page 1</span>
           <button id="next" class="btn btn-ghost" type="button">Berikutnya</button>
         </div>
       </div>
@@ -112,17 +115,13 @@
     <section class="section reveal" id="about">
       <div class="container about">
         <div>
-          <h2>Tentang Pixel Playground</h2>
-          <p>
-            Pixel Playground adalah pusat kurasi game web indie berukuran ringan.
-            Masuk untuk inspirasi cepat, temukan kreator baru, dan mainkan game
-            secara instan di mana saja.
-          </p>
+          <h2>About Pixel Playground</h2>
+          <p>Pixel Playground is a curated hub for bite-sized indie web games. Dive in for quick inspiration, discover new creators, and play instantly anywhere.</p>
         </div>
         <ul class="about-list">
-          <li>Cepat dimainkan</li>
-          <li>Ramah untuk mobile</li>
-          <li>Tanpa instalasi</li>
+          <li>Fast to play</li>
+          <li>Mobile-friendly</li>
+          <li>No installs</li>
         </ul>
       </div>
     </section>
@@ -130,7 +129,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> Pixel Playground. Dibuat dengan HTML/CSS/JS.</p>
+      <p>© <span id="year"></span> Pixel Playground. Built with HTML/CSS/JS.</p>
       <div class="footer-links">
         <a href="#">Twitter</a>
         <a href="#">Discord</a>
@@ -141,4 +140,4 @@
 
   <script src="./assets/js/main.js"></script>
 </body>
-              </html>
+</html>
