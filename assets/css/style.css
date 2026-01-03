@@ -32,6 +32,46 @@ body {
   line-height: 1.6;
 }
 
+#page-loader {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: #0b0b12;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+
+#page-loader.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader-text {
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.shimmer {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 1.6s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
 .grain {
   position: fixed;
   inset: 0;
@@ -512,3 +552,5 @@ a:focus-visible {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+
++
