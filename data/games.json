@@ -1,123 +1,14 @@
-
 [
   {
     "id": "g1",
-    "title": "Neon Drift",
-    "description": "Slide through neon tunnels and dodge obstacles in a synthwave endless runner.",
-    "tags": ["Arcade", "Endless", "Synthwave"],
-    "popularity": 98,
-    "updatedAt": "2024-12-18",
-    "url": "https://example.com/game-1",
-    "repo": "https://github.com/example/neon-drift",
-    "cover": "./assets/img/neon-drift.jpg",
-    "featured": true
-  },
-  {
-    "id": "g2",
-    "title": "Pixel Orchard",
-    "description": "Grow a cozy pixel orchard and trade fruit with friendly NPCs.",
-    "tags": ["Cozy", "Simulation", "Pixel"],
-    "popularity": 72,
-    "updatedAt": "2024-11-02",
+    "title": "Kucing Panen Apel",
+    "description": "Bantu kucing ceria memanen apel dan kumpulkan skor terbaik di kebun pixel.",
+    "tags": ["Cozy", "Casual", "Pixel"],
+    "popularity": 95,
+    "updatedAt": "2024-12-20",
     "url": "http://game.azizid.online/",
     "repo": "",
-    "cover": "./assets/img/pixel-orchard.jpg",
-    "featured": false
-  },
-  {
-    "id": "g3",
-    "title": "Skybound Tactics",
-    "description": "Command your sky crew in bite-sized tactical battles above the clouds.",
-    "tags": ["Strategy", "Turn-based"],
-    "popularity": 64,
-    "updatedAt": "2024-10-10",
-    "url": "https://example.com/game-3",
-    "repo": "https://github.com/example/skybound-tactics",
-    "cover": "./assets/img/skybound-tactics.jpg",
-    "featured": false
-  },
-  {
-    "id": "g4",
-    "title": "Lumen Quest",
-    "description": "Light up lost temples with puzzles that bend mirrors and beams.",
-    "tags": ["Puzzle", "Adventure"],
-    "popularity": 83,
-    "updatedAt": "2024-09-22",
-    "url": "https://example.com/game-4",
-    "repo": "",
-    "cover": "./assets/img/lumen-quest.jpg",
-    "featured": false
-  },
-  {
-    "id": "g5",
-    "title": "Orbit Dash",
-    "description": "Tap to orbit planets and chain combos for a cosmic high score.",
-    "tags": ["Arcade", "Rhythm"],
-    "popularity": 91,
-    "updatedAt": "2024-08-30",
-    "url": "https://example.com/game-5",
-    "repo": "",
-    "cover": "./assets/img/orbit-dash.jpg",
-    "featured": false
-  },
-  {
-    "id": "g6",
-    "title": "Voxel Forge",
-    "description": "Build micro worlds with voxel tools and share creations online.",
-    "tags": ["Sandbox", "Builder"],
-    "popularity": 75,
-    "updatedAt": "2024-07-12",
-    "url": "https://example.com/game-6",
-    "repo": "https://github.com/example/voxel-forge",
-    "cover": "./assets/img/voxel-forge.jpg",
-    "featured": false
-  },
-  {
-    "id": "g7",
-    "title": "Maze Runner Mini",
-    "description": "Navigate randomized mazes with a timer and collectible boosts.",
-    "tags": ["Puzzle", "Speedrun"],
-    "popularity": 59,
-    "updatedAt": "2024-06-08",
-    "url": "https://example.com/game-7",
-    "repo": "",
-    "cover": "./assets/img/maze-runner-mini.jpg",
-    "featured": false
-  },
-  {
-    "id": "g8",
-    "title": "Tiny Fleet",
-    "description": "Manage a pocket-sized fleet and deliver cargo across nebula routes.",
-    "tags": ["Management", "Sci-fi"],
-    "popularity": 68,
-    "updatedAt": "2024-05-18",
-    "url": "https://example.com/game-8",
-    "repo": "",
-    "cover": "./assets/img/tiny-fleet.jpg",
-    "featured": false
-  },
-  {
-    "id": "g9",
-    "title": "Rainy Rooftop",
-    "description": "Chill with lo-fi beats while you stack umbrellas in the rain.",
-    "tags": ["Relax", "Casual"],
-    "popularity": 54,
-    "updatedAt": "2024-04-05",
-    "url": "https://example.com/game-9",
-    "repo": "https://github.com/example/rainy-rooftop",
-    "cover": "./assets/img/rainy-rooftop.jpg",
-    "featured": false
-  },
-  {
-    "id": "g10",
-    "title": "Pulse Arena",
-    "description": "Survive waves of neon bots with twin-stick shooting and power-ups.",
-    "tags": ["Action", "Shooter"],
-    "popularity": 88,
-    "updatedAt": "2024-03-21",
-    "url": "https://example.com/game-10",
-    "repo": "",
-    "cover": "./assets/img/pulse-arena.jpg",
-    "featured": false
+    "cover": "./assets/img/cover-default.svg",
+    "featured": true
   }
 ]
